@@ -102,17 +102,13 @@ informative:
 
 --- abstract
 
-This document describes CBOR Object Signing and Encryption (COSE) serialization with Ascon,
- a NIST standard for lightweight cryptography.
+This document describes CBOR Object Signing and Encryption (COSE) serialization with Ascon.
 
-In 2019, as a part of CAESAR competition, Ascon-128 and Ascon-128a were
-selected as the first choice for the lightweight authenticated encryption.
-After, in 2023, National Institute of Standards and Technology (NIST) selected
-Ascon family of cryptographic algorithms to be the standard for lightweight
-cryptography. In August 2025, NIST Special Publication 800-232 was released,
-defining Ascon-based lightweight cryptography standards for constrained
-devices. This recognition makes it particularly interesting
-to enable using Ascon with COSE structures.
+The Ascon algorithm has been published in NIST Special Publication 800-232 in August 2025,
+as the winner of a competition for lightweight authenticated encryption.
+The NIST publication describes its use for constrained devices.
+This document makes it available in the COSE ecosystem
+for authenticated encryption, hashing and functions related to hashing.
 
 --- middle
 
