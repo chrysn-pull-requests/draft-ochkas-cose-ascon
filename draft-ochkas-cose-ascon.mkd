@@ -212,8 +212,8 @@ The truncated version the Ascon hash allows for a smaller transmission overhead 
 
 ### Ascon-Hash256 for MAC operations ###
 
-In COSE, integration Ascon-Hash256 for MAC operations SHALL be implemented via HMAC algorithm {{RFC2104}}.
-This algorithm is described in {{cosemacalgos}}.
+In COSE, Ascon-Hash256 for MAC operations SHALL be implemented via HMAC algorithm {{RFC2104}}.
+This registered algorithms are described in {{cosemacalgos}}.
 
 |Name|Value|Hash|Tag Length|Description|
 |HMAC Ascon-Hash256|TBD (requested assigment 8)|Ascon-Hash256|256 bits|HMAC w/ Ascon-Hash256|
@@ -224,7 +224,7 @@ The creation and verification of COSE MAC using the algorithms from {{cosemacalg
 
 ### Ascon-Hash256 for KDF operations ###
 
-In COSE, integration Ascon-Hash256 for KDF operations SHALL be done via HMAC-based Extract-and-Expand KDF (HKDF) defined in {{RFC5869}}.
+In COSE, Ascon-Hash256 for KDF operations SHALL be done via HMAC-based Extract-and-Expand KDF (HKDF) defined in {{RFC5869}}.
 HKDF leverages HMAC mechanism described in {{RFC2104}}. HMAC is an algorithm allowing usage of
 arbirtary cryptographic hash functions for message authentication. This KDF is described in {{cosekdfalgos}}.
 
