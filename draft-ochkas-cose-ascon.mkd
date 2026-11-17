@@ -108,7 +108,7 @@ The Ascon algorithm has been published in NIST Special Publication 800-232 in Au
 as the winner of a competition for lightweight authenticated encryption.
 The NIST publication describes its use for constrained devices.
 This document makes it available in the COSE ecosystem
-for authenticated encryption, hashing and functions related to hashing.
+for authenticated encryption, hashing, Message Authentication Code (MAC), and related operations.
 
 --- middle
 
@@ -203,7 +203,7 @@ Ascon hash algorithm is parametrized by the rate r, the number of permutation ro
 In COSE, hash algorithms are used directly, for example, for object identification with a fingerprint, or indirect signatures (see {{RFC9054}}).
 {{cosehashalgos}} specifies two Ascon-Hash256 algorithms for COSE to satisfy these use cases.
 
-|Name|Value|Description||Recommended|
+|Name|Value|Description|Recommended|
 |Ascon-Hash256|TBD (requested assignment -20)|Ascon 256-bit hash|Yes|
 |Ascon-Hash256/64|TBD (requested assignment -21)|Ascon 256-bit hash truncated to 64 bits|Filter Only|
 {: #cosehashalgos title="New COSE hash algorithms with Ascon"}
